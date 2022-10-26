@@ -1,1 +1,1 @@
-# WebAR-Schleswig-Holstein-
+# WebAR-Schleswig-Holstein
