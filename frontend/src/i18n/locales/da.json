@@ -1,0 +1,186 @@
+{
+  "name": "Dansk",
+  "pages": {
+    "main": {
+      "title": "Velkommen til Landesmuseen Schleswig-Holstein WebAR-oplevelsen.",
+      "text": "Vælg venligst et museum fra listen nedenfor.",
+      "discoverButtonLabel": "Opdage",
+      "museumImageAltText": "Et billede af"
+    },
+    "welcome": {
+      "welcomeImageAltText": "En illustration af en af ​​museets AR-oplevelser",
+      "arInstructions": {
+        "title": "Instruktioner",
+        "step1": {
+          "text": "Du har brug for en AR-kompatibel mobilenhed (de fleste smartphones og tablets siden 2016 skal understøtte den). Kontroller venligst den fulde enhedsliste over <a href='https://www.apple.com/augmented-reality/' target='_blank'>Apple</a> og <a href='https://developers.google.com/ar/devices#google_play_devices' target='_blank'>Android</a>.",
+          "iconAltText": "Illustration af en mobiltelefon med et bekræftelsessymbol på skærmen."
+        },
+        "step2": {
+          "text": "Gå til et af de augmented reality -placeringer, som du kan finde i museet.",
+          "iconAltText": "Illustration af en QR-kode i et kortsymbol"
+        },
+        "step3": {
+          "text": "Hvis du ikke er i museet, skal du vælge en placering fra placeringslisten, og på lokationssiden, skal du klikke på 'Start Augmented Reality'",
+          "iconAltText": "Illustration af en hånd, der viser på en mobiltelefonskærm, der viser et kortikon"
+        },
+        "step4": {
+          "text": "Åbn QR-scanneren, og scan den QR-kode, som du kan finde på AR-placeringen. Sørg for, at du tillader appen at bruge dit kamera, og at din enhed ikke er i lydløs tilstand.",
+          "iconAltText": "Illustration af en hånd, der indeholder en mobiltelefon, der viser en QR-kode på skærmen"
+        }
+      },
+      "qrScannerButtonLabel": "Åbn QR-scanneren",
+      "relatedMuseums": {
+        "title": "Oplev flere museer med AR",
+        "text": "Med denne AR-app kan du også besøge disse andre museer i Landesmuseen Schleswig-Holstein. Prøv det!",
+        "discoverButtonLabel": "Opdage",
+        "museumImageAltText": "Et billede af"
+      },
+      "defaultAudioDescriptionTitle": "Lydbeskrivelse",
+      "defaultAudioDescriptionText": "Lydbeskrivelse af museets velkomstsideindhold"
+    },
+    "station": {
+      "arButtonLabel": "Start Augmented Reality",
+      "defaultAudioDescriptionTitle": "Lydbeskrivelse",
+      "defaultAudioDescriptionText": "Lydbeskrivelse af AR-oplevelsens indhold"
+    },
+    "startAR": {
+      "startButtonLabel": "Start Augmented Reality",
+      "arIconAltText": "En illustration af en smartphone, der viser et Augmented Reality-ikon"
+    },
+    "error": {
+      "text": "Noget gik galt.",
+      "linkText": "Tilbage til startsiden"
+    },
+    "arError": {
+      "text": "Vi er ikke i stand til at give dig dette indhold, fordi din telefon desværre ikke understøtter augmented reality. Se listen over kompatible enheder fra <a href='https://www.apple.com/augmented-reality/' target='_blank'>Apple</a> og <a href='https://developers.google.com/ar/devices#google_play_devices' target='_blank'>Android</a>.",
+      "buttonLabel": "Tilbage til hovedsiden"
+    }
+  },
+  "components": {
+    "settingsMenu": {
+      "mainLabel": {
+        "open": "Lukke",
+        "closed": "Indstillinger"
+      },
+      "languageMenuTitle": "Vælge sprog",
+      "accessibilityMenu": {
+        "title": "Et tilgængeligt museum",
+        "audioDescriptionLabel": "Lydbeskrivelse",
+        "contrastLabel": "Kontrast",
+        "largerTextLabel": "Større tekst"
+      },
+      "museumLogoDefaultAltText": "Museets logo",
+      "settingsIconAltText": "Indstillinger",
+      "closeIconAltText": "Luk",
+      "audioDescriptionIconAltText": "Lydbeskrivelse",
+      "contrastIconAltText": "Kontrast",
+      "largerTextIconAltText": "Større tekst"
+    },
+    "stationsOverview": {
+      "title": "Placeringer",
+      "checkOnMapButtonLabel": "Hvor er denne placering?",
+      "imageDefaultAltText": "Placering af ar oplevelse",
+      "poiIconAltText": "Placering",
+      "noContentTitle": "Ikke flere AR -placeringer tilgængelige på dette tidspunkt.",
+      "noContentText": "Prøv igen senere."
+    },
+    "mapViewer": {
+      "backButtonLabel": "Tilbage til oversigten",
+      "imageDefaultAltText": "Kortbillede af placeringen af ​​AR-oplevelsen på museet"
+    },
+    "onboarding": {
+      "step1": {
+        "text": "Scan QR -koden og klik på knappen 'Start Augmented Reality' for at starte oplevelsen.",
+        "imgAltText": "Illustration af en hånd, der peger mod en knap på en mobiltelefonskærm. Knappen siger Start AR-oplevelse.",
+        "nextButtonLabel": "Næste",
+        "prevButtonLabel": ""
+      },
+      "step2": {
+        "text": "Peg mobiltelefonkameraet fremad, og scan dit miljø, indtil AR-objektet er synligt.",
+        "imgAltText": "Illustration af en hånd, der holder en mobiltelefon, der viser et 3D-objekt på dens skærm.",
+        "nextButtonLabel": "Næste",
+        "prevButtonLabel": "Tilbage"
+      },
+      "step3": {
+        "text": "Et godt oplyst miljø og hovedtelefoner anbefales til en bedre oplevelse.",
+        "imgAltText": "Illustration af en overflade, der er oplyst af en lyskilde.",
+        "nextButtonLabel": "Næste",
+        "prevButtonLabel": "Tilbage"
+      },
+      "step4": {
+        "text": "Du kan bevæge dig rundt i AR-objektet for at se mere. Du kan også flytte og skalere AR-objektet med fingrene.",
+        "imgAltText": "Illustration af en hånd, der holder en mobiltelefon, der viser et 3D-objekt på dens skærm.",
+        "nextButtonLabel": "Til QR Scanner",
+        "prevButtonLabel": "Tilbage"
+      },
+      "skipButtonLabel": "Springe"
+    },
+    "qrScanner": {
+      "imgAltText": "QR-kode scanner mål symbol"
+    },
+    "header": {
+      "imageDefaultAltText": "Et billede, der viser en forhåndsvisning af Augmented Reality-oplevelsen på et sted på museet"
+    },
+    "footer": {
+      "addressTitle": "Adresse",
+      "contactTitle": "Kontakt",
+      "visitInformationTitle": "Information om besøg"
+    },
+    "loading": {
+      "text": "Indlæser..."
+    },
+    "button": {
+      "arBanner": {
+        "title": "Kunne du lide denne AR-oplevelse?",
+        "text": "Få mere at vide om dette objekt",
+        "buttonLabel": "Opdage"
+      },
+      "arNotAvailable": {
+        "title": "Oops...",
+        "text": "Augmented Reality understøttes ikke af din enhed eller browser. Prøv igen at bruge en kompatibel enhed og browser.Se listen over kompatible enheder fra <a href='https://www.apple.com/augmented-reality/' target='_blank'>Apple</a> og <a href='https://developers.google.com/ar/devices#google_play_devices' target='_blank'>Android</a>."
+      },
+      "arPreviewImgAltText": "Forhåndsvisning af Augmented Reality"
+    },
+    "arCallToAction": {
+      "arIconAltText": "AR symbol"
+    },
+    "imageCarousel": {
+      "imageInfoTitle": "Billede information",
+      "imageDefaultAltText": "En billeddel af et billedgalleri"
+    },
+    "videoPlayer": {
+      "videoNotSupportedMsg": "Din browser understøtter ikke HTML5-Video.",
+      "playPauseButtonLabel": "Afspil/Pause",
+      "toggleSoundButtonLabel": "Lyd til/fra",
+      "fullscreenButtonLabel": "Fuldskærm til/fra",
+      "picInPicButtonLabel": "Billede i billedet til/fra",
+      "playButtonImageAltText": "Afspilningsknap",
+      "pauseButtonImageAltText": "Pauseknap",
+      "soundOnButtonImageAltText": "Lyd til knap",
+      "soundOffButtonImageAltText": "Lyd fra knap",
+      "fullscreenButtonImageAltText": "Fuldskærmknap",
+      "picInPicOnButtonImageAltText": "Billede i billedet til knap",
+      "picInPicOffButtonImageAltText": "Billede i billedet fra knap"
+    },
+    "audioPlayer": {
+      "posterImgDefaultAltText": "Billede af lydfil",
+      "playButtonImageAltText": "Afspilningsknap",
+      "pauseButtonImageAltText": "Pauseknap",
+      "soundOnButtonImageAltText": "Lyd til knap",
+      "soundOffButtonImageAltText": "Lyd fra knap"
+    },
+    "quiz": {
+      "buttonLabel": {
+        "confirm": "Bekræft",
+        "tryAgain": "Prøv igen"
+      }
+    },
+    "cookieBanner": {
+      "title": "Denne hjemmeside bruger cookies",
+      "text": "For optimalt at designe dette websted til dig og bruger vi cookies. Ved at fortsætte med at bruge webstedet accepterer du brugen af cookies. For mere information om cookies, se vores",
+      "privacyPolicyLinkText": "privatlivspolitik.",
+      "acceptButtonLabel": "Acceptere",
+      "rejectButtonLabel": "Afvise"
+    }
+  }
+}

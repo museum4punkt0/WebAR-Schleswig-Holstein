@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "cookies_usages",
+  "info": {
+    "singularName": "cookies-usage",
+    "pluralName": "cookies-usages",
+    "displayName": "Cookies-Erklärung",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "text": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "sh-webar-cms",
+  "private": true,
+  "version": "0.1.0",
+  "description": "CMS web app for the Schleswig-Holstein WebAR project",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "lint": "eslint --ext .html,.js src config"
+  },
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.3.6",
+    "@strapi/plugin-users-permissions": "4.3.6",
+    "@strapi/strapi": "4.3.6",
+    "pg": "8.8.0",
+    "slugify": "^1.6.5",
+    "strapi-plugin-entity-relationship-chart": "^4.1.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "26850471-49f3-443e-8ebf-1a17db0467a8"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

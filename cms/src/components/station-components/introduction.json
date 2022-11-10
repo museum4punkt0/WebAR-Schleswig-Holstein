@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_station_components_introductions",
+  "info": {
+    "displayName": "Einleitung",
+    "icon": "hourglass-start",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

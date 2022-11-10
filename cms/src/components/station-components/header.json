@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_station_components_headers",
+  "info": {
+    "displayName": "Kopfzeile",
+    "icon": "heading",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+FROM node:16-alpine
+
+RUN mkdir /app
+WORKDIR /app
+
+COPY ./package.json ./
+
+RUN npm install
+
+ADD src  /src
+ADD config  /config
+ADD public  /public
+ADD database  /database
+ADD .eslintrc  ./
+ADD favicon.ico  ./
+ADD .strapi-updater.json  ./
+
+EXPOSE 1337
+
+CMD ["npm", "run", "develop"]

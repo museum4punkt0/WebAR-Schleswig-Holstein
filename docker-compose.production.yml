@@ -1,0 +1,133 @@
+version: "3.7"
+
+services:
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        APP_PORT: "${FRONTEND_APP_PROD_PORT}"
+        APP_BASE_URL: "${FRONTEND_BASE_PROD_URL}"
+        VITE_API_BASE_URL: "${API_PROD_URL}"
+        VITE_ASSETS_BASE_URL: "${STRAPI_PROD_ASSETS_BASE_URL}"
+        VITE_STRAPI_AUTH_TOKEN: "${STRAPI_PROD_AUTH_TOKEN}"
+    container_name: sh-webar-frontend
+    volumes:
+      - ./frontend/src:/app/src
+      - ./frontend/public:/app/public
+      - ./frontend/index.html:/app/index.html
+      - ./frontend/vite.config.js:/app/vite.config.js
+    security_opt:
+      - no-new-privileges:true
+    depends_on:
+      - strapi
+      - load-balancer
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=sh-web-ar-network-proxy"
+      
+      - "traefik.http.routers.frontend.tls=true"
+      - "traefik.http.routers.frontend.rule=Host(`webar.landesmuseen.sh`)"
+      - "traefik.http.routers.frontend.entrypoints=web,websecure"
+      - "traefik.http.routers.frontend.tls.certresolver=le"
+    networks:
+      - sh-web-ar-network-proxy
+      - sh-web-ar-network-backend
+    restart: always
+
+  strapi:
+    build:
+      context: ./cms
+      dockerfile: Dockerfile
+    container_name: sh-webar-cms
+    environment:
+      HOST: "${CMS_HOST}"
+      URL: "${CMS_PROD_URL}"
+      PORT: "${CMS_PROD_PORT}"
+      DATABASE_NAME: "${DATABASE_NAME}"
+      DATABASE_HOST: "${DATABASE_HOST}"
+      DATABASE_PORT: "${DATABASE_PORT}"
+      DATABASE_USERNAME: "${DATABASE_USERNAME}"
+      DATABASE_PASSWORD: "${DATABASE_PASSWORD}"
+      DATABASE_SSL: "${DATABASE_SSL}"
+      JWT_SECRET: "${JWT_SECRET}"
+      ADMIN_JWT_SECRET: "${ADMIN_JWT_SECRET}"
+      APP_KEYS: "${APP_KEYS}"
+      API_TOKEN_SALT: "${API_TOKEN_SALT}"
+      NODE_ENV: "production"
+    volumes:
+      - ./cms/src:/app/src
+      - ./cms/config:/app/config
+      - ./cms/public:/app/public
+    security_opt:
+      - no-new-privileges:true
+    depends_on:
+      - postgres
+      - load-balancer
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=sh-web-ar-network-proxy"
+
+      - "traefik.http.routers.strapi.tls=true"
+      - "traefik.http.routers.strapi.rule=Host(`cms-webar.landesmuseen.sh`)"
+      - "traefik.http.routers.strapi.entrypoints=web,websecure"
+      - "traefik.http.routers.strapi.tls.certresolver=le"
+    networks:
+      - sh-web-ar-network-proxy
+      - sh-web-ar-network-backend
+    restart: always
+
+  postgres:
+    image: postgres
+    container_name: sh-webar-db-production
+    environment:
+      POSTGRES_DB: "${POSTGRES_DB}"
+      POSTGRES_USER: "${POSTGRES_USER}"
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD}"
+    volumes:
+      - sh-webar-db-data-production:/var/lib/postgresql/data
+    ports:
+      - "${DATABASE_PORT}:${DATABASE_PORT}"
+    networks:
+      - sh-web-ar-network-backend
+    restart: always
+
+  load-balancer:
+    image: traefik:latest
+    container_name: sh-webar-load-balancer
+    security_opt:
+      - no-new-privileges:true
+    command:
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.websecure.address=:443"
+      - "--providers.docker.network=sh-web-ar-network-proxy"
+      - "--certificatesResolvers.le.acme.email=hostmaster@united-domains.de"
+      - "--certificatesResolvers.le.acme.storage=/letsencrypt/acme.json"
+      - "--certificatesResolvers.le.acme.tlsChallenge=true"
+      - "--certificatesResolvers.le.acme.httpChallenge.entryPoint=web"
+      - "--entrypoints.web.http.redirections.entrypoint.to=websecure"
+      - "--entrypoints.web.http.redirections.entrypoint.scheme=https"
+      - "touch /letsencrypt/acme.json"
+      - "chown 600 /letsencrypt/acme.json"
+    ports:
+      - "443:443"
+      - "80:80"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./letsencrypt:/letsencrypt
+    networks:
+      - sh-web-ar-network-proxy
+    restart: always
+
+networks:
+  sh-web-ar-network-proxy:
+    external: true
+
+  sh-web-ar-network-backend:
+    external: true
+
+volumes:
+  sh-webar-db-data-production:

@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_museum_components_welcome_pages",
+  "info": {
+    "displayName": "Startsseite",
+    "icon": "child",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "dgs_video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "audio_description": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "audios"
+      ]
+    },
+    "audio_description_title": {
+      "type": "string"
+    },
+    "audio_description_text": {
+      "type": "string"
+    }
+  }
+}

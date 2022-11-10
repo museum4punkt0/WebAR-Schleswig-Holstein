@@ -1,0 +1,186 @@
+{
+  "name": "Deutsch",
+  "pages": {
+    "main": {
+      "title": "Willkommen beim WebAR-Erlebnis der Landesmuseen Schleswig-Holstein.",
+      "text": "Bitte wählen Sie ein Museum aus.",
+      "discoverButtonLabel": "Entdecken",
+      "museumImageAltText": "Ein Bild von"
+    },
+    "welcome": {
+      "welcomeImageAltText": "Eine Illustration aus dem Augmented-Reality-Erlebnis im Museum",
+      "arInstructions": {
+        "title": "Anleitung",
+        "step1": {
+          "text": "Sie benötigen ein AR-kompatibles Mobilgerät (die meisten Smartphones und Tablets seit 2016 sollten dies unterstützen). Bitte überprüfen Sie die vollständige Geräteliste von <a href='https://www.apple.com/de/augmented-reality/' target='_blank'>Apple</a> und <a href='https://developers.google.com/ar/devices#google_play_devices' target='_blank'>Android</a>.",
+          "iconAltText": "Abbildung eines Mobiltelefons mit einem Bestätigungssymbol auf dem Bildschirm."
+        },
+        "step2": {
+          "text": "Gehen Sie zu einem der Augmented-Reality-Standorte, die Sie im Museum finden können. Sie können auf das Kartensymbol (unten rechts) klicken und die Liste der AR-Standorte im Museum finden.",
+          "iconAltText": "Abbildung eines QR-Code in einem Kartensymbol"
+        },
+        "step3": {
+          "text": "Wenn Sie nicht im Museum sind, wählen Sie einen Ort aus der Standortliste und klicken Sie auf der Standortseite auf 'Augmented Reality Starten'",
+          "iconAltText": "Illustration einer Hand, die auf einen Mobiltelefonbildschirm zeigt, der ein Kartensymbol anzeigt"
+        },
+        "step4": {
+          "text": "Öffnen Sie den QR-Scanner und scannen Sie den QR-Code, den Sie an dem AR-Standort finden können. Vergewissern Sie sich, dass Sie der App die Verwendung Ihrer Kamera erlauben und dass sich Ihr Gerät nicht im Stummmodus (Silent-Modus) befindet.",
+          "iconAltText": "Illustration einer Hand, die ein Mobiltelefon hält, das einen QR-Code auf ihrem Bildschirm anzeigt"
+        }
+      },
+      "qrScannerButtonLabel": "QR-Scanner öffnen",
+      "relatedMuseums": {
+        "title": "Weitere Museen mit AR entdecken",
+        "text": "Mit dieser AR-App können Sie auch diese anderen Museen der Landesmuseen Schleswig-Holstein besuchen. Probieren Sie es aus!",
+        "discoverButtonLabel": "Entdecken",
+        "museumImageAltText": "Ein Bild von"
+      },
+      "defaultAudioDescriptionTitle": "Audiodeskription",
+      "defaultAudioDescriptionText": "Audiodeskription des Inhalts der Museums-Begrüßungsseite"
+    },
+    "station": {
+      "arButtonLabel": "Augmented Reality Starten",
+      "defaultAudioDescriptionTitle": "Audiodeskription",
+      "defaultAudioDescriptionText": "Audiodeskription der Inhalte des AR-Erlebnisses"
+    },
+    "startAR": {
+      "startButtonLabel": "Augmented Reality Starten",
+      "arIconAltText": "Eine Abbildung eines Smartphones, dessen Bildschirm ein Augmented-Reality-Symbol zeigt"
+    },
+    "error": {
+      "text": "Es gab einen Fehler.",
+      "linkText": "Zurück zur Hauptseite"
+    },
+    "arError": {
+      "text": "Wir können Ihnen diesen Inhalt nicht zur Verfügung stellen, da Ihr Telefon leider keine Augmented Reality unterstützt.Bitte versuchen Sie es erneut mit einem anderen Gerät.",
+      "buttonLabel": "Zurück zur Hauptseite"
+    }
+  },
+  "components": {
+    "settingsMenu": {
+      "mainLabel": {
+        "open": "Schließen",
+        "closed": "Einstellungen"
+      },
+      "languageMenuTitle": "Sprache wählen",
+      "accessibilityMenu": {
+        "title": "Ein barrierearmes Museum",
+        "audioDescriptionLabel": "Audiodeskription",
+        "contrastLabel": "Kontrast",
+        "largerTextLabel": "Größerer Text"
+      },
+      "museumLogoDefaultAltText": "Museum Logo",
+      "settingsIconAltText": "Einstellungen",
+      "closeIconAltText": "Schließen",
+      "audioDescriptionIconAltText": "Audiodeskription",
+      "contrastIconAltText": "Kontrast",
+      "largerTextIconAltText": "Größerer Text"
+    },
+    "stationsOverview": {
+      "title": "Standorte",
+      "checkOnMapButtonLabel": "Wo ist dieser Standort?",
+      "imageDefaultAltText": "Ort der AR-Erfahrung",
+      "poiIconAltText": "Standort",
+      "noContentTitle": "Zu diesem Zeitpunkt keine AR-Standorte mehr verfügbar.",
+      "noContentText": "Bitte versuchen Sie es zu einem späteren Zeitpunkt noch einmal."
+    },
+    "mapViewer": {
+      "backButtonLabel": "Zurück zur Übersicht",
+      "imageDefaultAltText": "Kartenbild des Ortes des AR-Erlebnisses im Museum"
+    },
+    "onboarding": {
+      "step1": {
+        "text": "Scannen Sie den QR-Code und klicken Sie dann auf 'Augmented Reality Starten', um das Erlebnis zu beginnen.",
+        "imgAltText": "Illustration einer Hand, die einem Mobiltelefonbildschirm hinweist. Auf dem Bildschirm steht 'AR-Starten'",
+        "nextButtonLabel": "Weiter",
+        "prevButtonLabel": ""
+      },
+      "step2": {
+        "text": "Zeigen Sie die Handykamera vorwärts und scannen Sie Ihre Umgebung, bis das AR-Objekt sichtbar ist.",
+        "imgAltText": "Illustration einer Hand, die ein Mobiltelefon hält, das ein 3D -Objekt auf dem Bildschirm anzeigt.",
+        "nextButtonLabel": "Weiter",
+        "prevButtonLabel": "Zurück"
+      },
+      "step3": {
+        "text": "Eine gut beleuchtete Umgebung und Kopfhörer werden für ein besseres Erlebnis empfohlen.",
+        "imgAltText": "Illustration einer Oberfläche, die von einer Lichtquelle beleuchtet wird.",
+        "nextButtonLabel": "Weiter",
+        "prevButtonLabel": "Zurück"
+      },
+      "step4": {
+        "text": "Sie können sich um das AR-Objekt bewegen, um mehr zu sehen. Sie können das AR-Objekt auch mit Ihren Fingern bewegen und skalieren.",
+        "imgAltText": "Illustration einer Hand, die ein Mobiltelefon hält, das ein 3D-Objekt auf dem Bildschirm anzeigt.",
+        "nextButtonLabel": "Zum QR Scanner",
+        "prevButtonLabel": "Zurück"
+      },
+      "skipButtonLabel": "Überspringen"
+    },
+    "qrScanner": {
+      "imgAltText": "QR-Code-Scanner-Zielsymbol"
+    },
+    "header": {
+      "imageDefaultAltText": "Ein Bild, das eine Vorschau des Augmented Reality-Erlebnisses an einem Ort im Museum zeigt"
+    },
+    "footer": {
+      "addressTitle": "Adresse",
+      "contactTitle": "Kontakt",
+      "visitInformationTitle": "Mehr Information zu Ihrem Besuch"
+    },
+    "loading": {
+      "text": "Wird geladen..."
+    },
+    "button": {
+      "arBanner": {
+        "title": "Hat Ihnen diese Erfahrung gefallen?",
+        "text": "Entdecken Sie mehr über dieses Objekt",
+        "buttonLabel": "Entdecken"
+      },
+      "arNotAvailable": {
+        "title": "Oops...",
+        "text": "Augmented Reality wird von Ihrem Gerät oder Browser nicht unterstützt. Bitte versuchen Sie es erneut, wenn Sie ein kompatibles Gerät und einen kompatiblen Browser verwenden. Bitte überprüfen Sie die vollständige Geräteliste von <a href='https://www.apple.com/de/augmented-reality/' target='_blank'>Apple</a> und <a href='https://developers.google.com/ar/devices#google_play_devices' target='_blank'>Android</a>."
+      },
+      "arPreviewImgAltText": "Augmented Reality-Vorschau"
+    },
+    "arCallToAction": {
+      "arIconAltText": "AR-Symbol"
+    },
+    "imageCarousel": {
+      "imageInfoTitle": "Bildinformation",
+      "imageDefaultAltText": "Ein Bildteil einer Bildergalerie"
+    },
+    "videoPlayer": {
+      "videoNotSupportedMsg": "Ihr Gerät unterstützt keine HTML5 Videos.",
+      "playPauseButtonLabel": "Widergabe/Pause",
+      "toggleSoundButtonLabel": "Ton an/aus",
+      "fullscreenButtonLabel": "Vollbild an/aus",
+      "picInPicButtonLabel": "Bild in Bild an/aus",
+      "playButtonImageAltText": "Wiedergabe",
+      "pauseButtonImageAltText": "Wiedergabe unterbrechen (Pause)",
+      "soundOnButtonImageAltText": "Sound-An-Taste",
+      "soundOffButtonImageAltText": "Sound-Aus-Taste",
+      "fullscreenButtonImageAltText": "Vollbild-Taste",
+      "picInPicOnButtonImageAltText": "Bild in Bild-An-Taste",
+      "picInPicOffButtonImageAltText": "Bild in Bild-Aus-Taste"
+    },
+    "audioPlayer": {
+      "posterImgDefaultAltText": "Bild der Audio-Datei",
+      "playButtonImageAltText": "Widergabe-Taste",
+      "pauseButtonImageAltText": "Wiedergabe unterbrechen (Pause)",
+      "soundOnButtonImageAltText": "Sound-Aus-Taste",
+      "soundOffButtonImageAltText": "Sound-Aus-Taste"
+    },
+    "quiz": {
+      "buttonLabel": {
+        "confirm": "Bestätigen",
+        "tryAgain": "Erneut versuchen"
+      }
+    },
+    "cookieBanner": {
+      "title": "Diese Website verwendet Cookies",
+      "text": "Um unsere Webseite für euch optimal zu gestalten, verwenden wir Cookies. Durch die weitere Nutzung der Webseite stimmt ihr der Verwendung von Cookies zu. Weitere Informationen zu Cookies erhaltet ihr in unserer",
+      "privacyPolicyLinkText": "Datenschutzerklärung.",
+      "acceptButtonLabel": "Akzeptieren",
+      "rejectButtonLabel": "Ablehnen"
+    }
+  }
+}

@@ -1,0 +1,115 @@
+@import '@/assets/styles/variables.css';
+@import '@/assets/styles/fonts.css';
+
+html,
+body, 
+#app{
+  top: 0;
+  left: 0;
+  min-width: var(--min-width);
+  padding: 0;
+  margin: 0;
+}
+
+html, body{
+  width: 100vw;
+
+  /* 
+  Automatic rescaling of font-size based on viewport width.
+  See https://css-tricks.com/snippets/css/fluid-typography/.
+  */
+  /* stylelint-disable-next-line max-line-length */
+  font-size: calc(var(--font-scale-factor) * var(--base-font-size) + var(--min-max-font-size-difference) * ((100vw - var(--min-width)) / var(--min-max-screen-width-difference)));
+}
+
+/* 
+Add padding bottom to keep body within safe area in iOS.
+See https://developer.mozilla.org/en-US/docs/Web/CSS/env
+*/
+body{
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+#app {
+  width: 100%;
+  max-width: var(--max-width);
+  background-color: var(--bg-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: var(--header-font);
+  font-weight: normal;
+  text-align: left;
+}
+
+h1{
+  font-size: calc(2.5rem * var(--h1-scale-factor));
+}
+  
+h2 {
+  font-size: calc(2rem * var(--h2-scale-factor));
+}
+
+h3 {
+  font-size: calc(1.6rem * var(--h3-scale-factor));
+}
+
+h4 {
+  font-size: calc(1.3rem * var(--h4-scale-factor));
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+a {
+  font-family: var(--link-font);
+  font-size: 1rem;
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+.view-container {
+  width: calc(100% - var(--gutter) * 2);
+  max-width: calc(var(--max-width) - var(--gutter) * 2);
+  height: fit-content;
+  padding: var(--gutter);
+  margin-top: var(--settings-bar-height);
+  background-color: var(--bg-color);
+}
+
+/* --------------------------- Markdown elements ---------------------------- */
+
+.instructions-step-markdown p {
+  max-width: calc(var(--max-width) - 30%);
+  text-align: center;
+}
+
+.instructions-step-markdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ar-not-supported-message-container p{
+  font-size: 1rem;
+}
+
+
+/* ----------------------------- Media Queries ------------------------------ */
+
+@media screen and (min-width: 768px) {
+  html, body {
+    font-size: var(--max-font-size) ;
+  }
+
+  html, body, #app{
+    margin: 0 auto;
+  }
+}

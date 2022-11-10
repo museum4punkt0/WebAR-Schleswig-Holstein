@@ -1,0 +1,186 @@
+{
+  "name": "English",
+  "pages": {
+    "main": {
+      "title": "Welcome to the WebAR experience of the Schleswig-Holstein State Museums.",
+      "text": "Please select a museum from the list below.",
+      "discoverButtonLabel": "Discover",
+      "museumImageAltText": "A picture of"
+    },
+    "welcome": {
+      "welcomeImageAltText": "An illustration of one of the museum's Augmented Reality experiences",
+      "arInstructions": {
+        "title": "Instructions",
+        "step1": {
+          "text": "You need an AR-compatible mobile device (most smartphones and tablets since 2016 should support it). Please check the full device list of <a href='https://www.apple.com/augmented-reality/' target='_blank'>Apple</a> and <a href='https://developers.google.com/ar/devices#google_play_devices' target='_blank'>Android</a>.",
+          "iconAltText": "Illustration of a mobile phone with a confirmation symbol on its screen."
+        },
+        "step2": {
+          "text": "Go to one of the Augmented Reality locations that you can find in the museum. You can click on the map symbol (bottom right) and find the list of AR locations in each museum.",
+          "iconAltText": "Illustration of a QR code in a map symbol"
+        },
+        "step3": {
+          "text": "If you are not in the museum, select a location from the location list, and in the location page, click on 'Start Augmented Reality'",
+          "iconAltText": "Illustration of a hand that shows on a mobile phone screen that shows a map icon"
+        },
+        "step4": {
+          "text": "Open the QR scanner and scan the QR code that you can find at the AR location. Make sure you allow the app to use your camera and that your device is not in silent mode.",
+          "iconAltText": "Illustration of a hand that holds a mobile phone, which shows a QR code on its screen"
+        }
+      },
+      "qrScannerButtonLabel": "Open QR Scanner",
+      "relatedMuseums": {
+        "title": "Discover more museums with AR",
+        "text": "You can also use this AR app to visit these other museums of the Schleswig-Holstein State Museums. Try it out!",
+        "discoverButtonLabel": "Discover",
+        "museumImageAltText": "A picture of"
+      },
+      "defaultAudioDescriptionTitle": "Audio description",
+      "defaultAudioDescriptionText": "Audio description of the museum welcome page content"
+    },
+    "station": {
+      "arButtonLabel": "Start Augmented Reality",
+      "defaultAudioDescriptionTitle": "Audio description",
+      "defaultAudioDescriptionText": "Audio description of the AR experience content"
+    },
+    "startAR": {
+      "startButtonLabel": "Start Augmented Reality",
+      "arIconAltText": "Eine Abbildung eines Smartphones mit einem Augmented-Reality-Symbol"
+    },
+    "error": {
+      "text": "There was an error.",
+      "linkText": "Return to the main page"
+    },
+    "arError": {
+      "text": "We are unable to provide you with this content because your phone unfortunately does not support Augmented Reality. Please try again with a different device. Refer to the compatible devices list from <a href='https://www.apple.com/augmented-reality/' target='_blank'>Apple</a> and <a href='https://developers.google.com/ar/devices#google_play_devices' target='_blank'>Android</a>.",
+      "buttonLabel": "Return to the main page"
+    }
+  },
+  "components": {
+    "settingsMenu": {
+      "mainLabel": {
+        "open": "Close",
+        "closed": "Settings"
+      },
+      "languageMenuTitle": "Choose your language",
+      "accessibilityMenu": {
+        "title": "An accessible museum",
+        "audioDescriptionLabel": "Audio description",
+        "contrastLabel": "Contrast",
+        "largerTextLabel": "Larger text"
+      },
+      "museumLogoDefaultAltText": "Museum logo",
+      "settingsIconAltText": "Settings",
+      "closeIconAltText": "Close",
+      "audioDescriptionIconAltText": "Audio description",
+      "contrastIconAltText": "Contrast",
+      "largerTextIconAltText": "Larger text"
+    },
+    "stationsOverview": {
+      "title": "Locations",
+      "checkOnMapButtonLabel": "Where is this location?",
+      "imageDefaultAltText": "Location of AR experience",
+      "poiIconAltText": "Location",
+      "noContentTitle": "No more locations available at this time.",
+      "noContentText": "Come back at a later time."
+    },
+    "mapViewer": {
+      "backButtonLabel": "Back to overview",
+      "imageDefaultAltText": "Map image of the location of the AR experience at the museum"
+    },
+    "onboarding": {
+      "step1": {
+        "text": "Scan the QR code and click on the 'Start Augmented Reality' button to start the experience.",
+        "imgAltText": "Illustration of a hand that points towards a button on a mobile phone screen. The button says Start Augmented Reality.",
+        "nextButtonLabel": "Next",
+        "prevButtonLabel": ""
+      },
+      "step2": {
+        "text": "Point the phone camera forward and scan your environment until the AR object is visible.",
+        "imgAltText": "Illustration of a hand holding a mobile phone, which shows a 3D object on its screen.",
+        "nextButtonLabel": "Next",
+        "prevButtonLabel": "Back"
+      },
+      "step3": {
+        "text": "A well-lit environment and headphones are recommended for a better experience.",
+        "imgAltText": "Illustration of a surface being lit by a light source.",
+        "nextButtonLabel": "Next",
+        "prevButtonLabel": "Back"
+      },
+      "step4": {
+        "text": "You can move around the AR object to see more. You can also move and scale the AR object with your fingers.",
+        "imgAltText": "Illustration of a hand holding a mobile phone, which shows a 3D object on its screen.",
+        "nextButtonLabel": "To QR Scanner",
+        "prevButtonLabel": "Back"
+      },
+      "skipButtonLabel": "Skip"
+    },
+    "qrScanner": {
+      "imgAltText": "QR code scanner target symbol"
+    },
+    "header": {
+      "imageDefaultAltText": "An image that shows a preview of the Augmented Reality experience in a location at the museum"
+    },
+    "footer": {
+      "addressTitle": "Address",
+      "contactTitle": "Contact",
+      "visitInformationTitle": "Visit information"
+    },
+    "loading": {
+      "text": "Loading..."
+    },
+    "button": {
+      "arBanner": {
+        "title": "Did you like this experience?",
+        "text": "Discover more about this object",
+        "buttonLabel": "Discover more"
+      },
+      "arNotAvailable": {
+        "title": "Oops...",
+        "text": "Augmented Reality is not supported by your device or browser. Please try again using a compatible device and browser. Refer to the compatible devices list from <a href='https://www.apple.com/augmented-reality/' target='_blank'>Apple</a> and <a href='https://developers.google.com/ar/devices#google_play_devices' target='_blank'>Android</a>."
+      },
+      "arPreviewImgAltText": "Augmented Reality preview image"
+    },
+    "arCallToAction": {
+      "arIconAltText": "AR icon"
+    },
+    "imageCarousel": {
+      "imageInfoTitle": "Image information",
+      "imageDefaultAltText": "An image part of an image gallery"
+    },
+    "videoPlayer": {
+      "videoNotSupportedMsg": "Your browser does not support HTML5 video.",
+      "playPauseButtonLabel": "Play/Pause",
+      "toggleSoundButtonLabel": "Toggle sound on/off",
+      "fullscreenButtonLabel": "Toggle fullscreen on/off",
+      "picInPicButtonLabel": "Toggle picture in picture on/off",
+      "playButtonImageAltText": "Play button",
+      "pauseButtonImageAltText": "Pause button",
+      "soundOnButtonImageAltText": "Sound on button",
+      "soundOffButtonImageAltText": "Sound off button",
+      "fullscreenButtonImageAltText": "Full screen button",
+      "picInPicOnButtonImageAltText": "Picture in picture on button",
+      "picInPicOffButtonImageAltText": "Picture in picture off button"
+    },
+    "audioPlayer": {
+      "posterImgDefaultAltText": "Audio poster image",
+      "playButtonImageAltText": "Play button",
+      "pauseButtonImageAltText": "Pause button",
+      "soundOnButtonImageAltText": "Sound on button",
+      "soundOffButtonImageAltText": "Sound off button"
+    },
+    "quiz": {
+      "buttonLabel": {
+        "confirm": "Confirm answer",
+        "tryAgain": "Try again"
+      }
+    },
+    "cookieBanner": {
+      "title": "This website uses cookies",
+      "text": "In order to optimally design this website for you and, we use cookies. By continuing to use the website, you agree to the use of cookies. For more information on cookies, please see our",
+      "privacyPolicyLinkText": "privacy policy.",
+      "acceptButtonLabel": "Accept",
+      "rejectButtonLabel": "Reject"
+    }
+  }
+}

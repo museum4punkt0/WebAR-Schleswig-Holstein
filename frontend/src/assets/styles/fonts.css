@@ -1,0 +1,32 @@
+
+@font-face{
+  font-family: 'OpenSans Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('@/assets/fonts/OpenSans-Regular.woff2') format('woff2'), 
+    url('@/assets/fonts/OpenSans-Regular.woff') format('woff');
+}
+
+@font-face{
+  font-family: 'OpenSans Bold';
+  font-style: bold;
+  font-weight: 800;
+  src: url('@/assets/fonts/OpenSans-Bold.woff2') format('woff2'), 
+    url('@/assets/fonts/OpenSans-Bold.woff') format('woff');
+}
+
+@font-face{
+  font-family: 'OpenSans SemiBold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('@/assets/fonts/OpenSans-SemiBold.woff2') format('woff2'), 
+    url('@/assets/fonts/OpenSans-SemiBold.woff') format('woff');
+}
+
+@font-face{
+  font-family: 'OpenSans ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  src: url('@/assets/fonts/OpenSans-ExtraBold.woff2') format('woff2'), 
+    url('@/assets/fonts/OpenSans-ExtraBold.woff') format('woff');
+}

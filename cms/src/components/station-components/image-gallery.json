@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_station_components_image_galleries",
+  "info": {
+    "displayName": "Bildergalerie",
+    "icon": "images",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image_gallery": {
+      "type": "component",
+      "repeatable": true,
+      "component": "station-components.single-image"
+    }
+  }
+}

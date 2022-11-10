@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_station_components_quiz_answers",
+  "info": {
+    "displayName": "Quiz-Antwort",
+    "icon": "exclamation-circle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "correct": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "name": "sh-webar-frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --port 8080",
+    "lint": "lint:eslint && lint:stylelint",
+    "lint:eslint": "eslint --ext .html,.vue src",
+    "lint:stylelint": "stylelint --fix **/*.{vue,css}",
+    "lint-staged": "lint:eslint && lint:stylelint",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@panzoom/panzoom": "^4.5.0",
+    "axios": "^0.27.2",
+    "marked": "^4.0.19",
+    "pinia": "^2.0.21",
+    "qr-scanner": "^1.4.1",
+    "v-lazy-image": "^2.1.1",
+    "vue": "^3.2.37",
+    "vue-cookies": "^1.8.1",
+    "vue-i18n": "^9.2.2",
+    "vue-router": "^4.1.5",
+    "vue3-carousel": "^0.1.46",
+    "vue3-markdown-it": "^1.0.10",
+    "vue3-youtube": "^0.1.9"
+  },
+  "devDependencies": {
+    "@intlify/vite-plugin-vue-i18n": "^6.0.1",
+    "@pinia/testing": "^0.0.14",
+    "@vitejs/plugin-vue": "^3.0.3",
+    "@vue/test-utils": "^2.0.2",
+    "eslint": "^8.23.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.4.0",
+    "eslint-plugin-vuejs-accessibility": "^1.2.0",
+    "husky": "^8.0.1",
+    "jsdom": "^20.0.0",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.11.0",
+    "stylelint-color-format": "^1.1.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^28.0.0",
+    "vite": "^3.0.9",
+    "vitest": "^0.22.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}

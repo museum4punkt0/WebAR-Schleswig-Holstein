@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_station_components_quizzes",
+  "info": {
+    "displayName": "Quiz",
+    "icon": "question-circle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "quiz_answer": {
+      "displayName": "Quiz Answer",
+      "type": "component",
+      "repeatable": true,
+      "component": "station-components.quiz-answer"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

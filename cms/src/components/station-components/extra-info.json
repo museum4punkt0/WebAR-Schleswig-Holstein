@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_station_components_extra_infos",
+  "info": {
+    "displayName": "Zusatzinformation",
+    "icon": "plus",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "short_description": {
+      "type": "text"
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

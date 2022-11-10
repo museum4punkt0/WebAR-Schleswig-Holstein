@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_station_components_paragraphs",
+  "info": {
+    "displayName": "Absatz",
+    "icon": "paragraph",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

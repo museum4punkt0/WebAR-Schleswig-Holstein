@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_museum_components_additional_information_links",
+  "info": {
+    "displayName": "Link zu zusätzlichen Informationen",
+    "icon": "info-circle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "link_text": {
+      "type": "string"
+    },
+    "link_url": {
+      "type": "string"
+    }
+  }
+}

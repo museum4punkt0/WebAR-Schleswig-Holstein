@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_station_components_single_images",
+  "info": {
+    "displayName": "Einzelbild",
+    "icon": "image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "info_text": {
+      "type": "string"
+    },
+    "credits": {
+      "type": "string"
+    }
+  }
+}

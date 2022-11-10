@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "accessibilities",
+  "info": {
+    "singularName": "accessibility",
+    "pluralName": "accessibilities",
+    "displayName": "Erklärung zur Barrierefreiheit",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "text": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

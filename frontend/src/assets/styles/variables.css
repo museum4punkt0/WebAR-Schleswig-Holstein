@@ -1,0 +1,46 @@
+@import '@/assets/styles/fonts.css';
+
+:root{
+  /* Colors */
+  --bg-color: white;
+  --primary-color: rgb(195 161 79);
+  --secondary-color: rgb(215 194 144);
+  --tertiary-color: rgb(34 34 37);
+  --light-color: rgb(220 220 220);
+  --header-color: rgb(0 0 0);
+  --text-color: rgb(0 0 0);
+  --button-primary-color: black;
+  --button-secondary-color: white;
+  --button-primary-bg-color: transparent;
+  --button-secondary-bg-color: transparent;
+
+  /* Fonts */
+  --header-font: 'OpenSans ExtraBold';
+  --paragraph-font: 'OpenSans Regular';
+  --menu-font-main: 'OpenSans Bold';
+  --menu-font-sub: 'OpenSans SemiBold';
+  --button-font: 'OpenSans SemiBold';
+  --link-font: 'OpenSans Regular';
+  --base-font-size: 16px;
+  --max-font-size: calc(20px * var(--font-scale-factor));
+  --min-max-font-size-difference: 4;
+  --font-scale-factor: 1;
+  --h1-scale-factor: 1;
+  --h2-scale-factor: 1;
+  --h3-scale-factor: 1;
+  --h4-scale-factor: 1;
+  --menu-label-scale-factor: 1;
+  --button-label-scale-factor: 1.2;
+  --timeline-font-scale-factor: 0.9;
+
+  /* Layout */
+  --min-width: 320px;
+  --max-width: 1024px;
+  --gutter: 20px;
+  --logo-height: 95px;
+  --settings-bar-height: calc(95px + var(--gutter) * 2);
+  --components-gap: 5vh;
+  --min-max-screen-width-difference: 704;
+  --max-button-width: 450px;
+
+}

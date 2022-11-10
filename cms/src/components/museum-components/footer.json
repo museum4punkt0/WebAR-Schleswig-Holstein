@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_museum_components_footers",
+  "info": {
+    "displayName": "Fußzeile",
+    "icon": "shoe-prints",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "string"
+    },
+    "google_maps_link": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "visit_info_link": {
+      "type": "string"
+    },
+    "info_link": {
+      "displayName": "Additional information link",
+      "type": "component",
+      "repeatable": true,
+      "component": "museum-components.additional-information-link"
+    }
+  }
+}
