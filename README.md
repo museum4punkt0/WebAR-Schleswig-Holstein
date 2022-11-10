@@ -1,3 +1,16 @@
+# Name der Anwendung
+Landesmuseen Schleswig-Holstein WebAR Platform
+
+## Inhaltsverzeichnis
+
+* [Description](#Description)
+* [Installation](#Installation)
+* [Benutzung](#Benutzung)
+* [Beteiligung](#Beteiligung)
+* [Credits](#Credits)
+* [Lizenz](#Lizenz)
+
+
 # Landesmuseen Schleswig-Holstein WebAR Platform
 
 ![Example images from Landesmuseen Schleswig-Holstein WebAR Webapp and CMS](documentation/example.png)
