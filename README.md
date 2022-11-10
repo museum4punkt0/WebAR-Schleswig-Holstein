@@ -6,6 +6,7 @@ Landesmuseen Schleswig-Holstein WebAR Platform
 * [Description](#Description)
 * [Components](#Components)
 * [Installation](#Installation)
+* [Funding](#Funding)
 * [Credits](#Credits)
 * [Lizenz](#Lizenz)
 
